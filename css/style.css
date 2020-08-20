@@ -1,0 +1,73 @@
+body {
+    background: darkblue
+   ;
+}
+
+.sticker {
+    background: white;
+    min-height: 100px;
+    min-width: 100px;
+    position: absolute;
+    left:0;
+    top:0;
+    border: 1px solid #6495ed;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.sticker .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.5em;
+    background: red;
+    width: 100%;
+    border-radius: 15px;
+}
+.sticker textarea {
+    padding: 3px 10px;
+    box-sizing: border-box;
+    min-height: 100px;
+    min-width: 100px;
+    background: transparent;
+    border: 1px solid #6495ed;
+    border-radius: 15px;
+}
+
+.sticker .bar:hover {
+    cursor: move;
+    background: #d0bdbd;
+}
+
+.sticker:hover {
+    z-index: 1;
+}
+
+.deleteButton, .saveButton {
+    border: none;
+    position: absolute;
+    top: 2px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+.deleteButton {
+    border-radius: 2px;
+    right: 5px;
+    background: red;
+}
+
+.saveButton {
+    /*doesnt work*/
+    background-image: url("save-icon.png");
+    border: none;
+    position: absolute;
+    top: 2px;
+    height: 15px;
+    width: 15px;
+    baground-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 5px;
+}
